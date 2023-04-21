@@ -1,0 +1,17 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  justify-items: center;
+  align-content: center;
+  row-gap: 2rem;
+  height: 100%;
+
+  .material-icons {
+    font-size: 4rem;
+    color: green;
+    border: solid 6px;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}

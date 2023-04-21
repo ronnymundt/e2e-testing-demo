@@ -1,0 +1,68 @@
+@import '@angular/material/theming';
+
+$primary-pink: mat-color($mat-pink, 700);
+
+.form-wrapper {
+  &.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 1px $primary-pink;
+    border-radius: 4px;
+    width: 400px;
+    margin: auto;
+    padding: 3rem;
+    box-sizing: border-box;
+  }
+
+  .header {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $primary-pink;
+  }
+
+  hr {
+    border-color: $primary-pink;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .example-form {
+    &.grid {
+      display: grid;
+    }
+
+    .name {
+      &.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+      }
+    }
+
+    .zip-city {
+      &.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+      }
+    }
+  }
+}
+
+.spinner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.75;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
