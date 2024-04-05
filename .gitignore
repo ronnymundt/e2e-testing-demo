@@ -41,3 +41,4 @@ Thumbs.db
 /playwright/.cache/
 /cypress/videos/
 tests-examples
+package-lock.json
