@@ -1,31 +1,78 @@
-# E2E Testing Demo
+# E2E Testing Demo 🧪📝
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.
+Eine kleine Angular 19 Demo-App mit einem Registrierungsformular,
+die als Basis für End-to-End-Tests mit **Cypress** und **Playwright** dient. 
+Ziel ist es, moderne E2E-Teststrategien mit Angular zu demonstrieren.
 
-## 1. Install
+## 🛠️ Technologien
 
-Run `npm install` or `npm i` to install all dependencies.
+- Angular 19
+- Angular Material
+- Angular Router
+- Cypress
+- Playwright
+- TypeScript
 
-## 2. Development server
+## ✨ Features
 
-Run `ng serve` for a dev server and navigate to `http://localhost:4200/`. Or hit `ng s -o` for short to open the app in your browser.
+- Eingaben der Registrierung
+- Routing zwischen Start- und Erfolgsseite
+- UI-Komponenten mit Angular Material
+- End-to-End-Tests mit Cypress und Playwright
 
-## 3. Running end-to-end tests
+## 🚀 Lokales Setup
 
-### E2E test with Cypress
+```
+git clone https://github.com/ronnymundt/e2e-testing-demo.git
+cd e2e-testing-demo
+npm install
+ng serve
+```
+> 💡 `ng serve` muss im Hintergrund laufen, damit die Tests erfolgreich ausgeführt werden können.
 
-Cypress: `npx cypress run`
+## 🧪 E2E-Tests mit Cypress
 
-Cypress UI: `npx cypress open`
+### Cypress-Tests im Terminal ausführen
 
-### E2E test with Playwright
+```
+npx cypress run
+```
 
-Install Playwright: `npx playwright install`
+### Cypress im UI-Modus starten
 
-Playwright: `npx playwright test`
+```
+npx cypress open
+```
 
-Playwright UI: `npx playwright test --ui`
+> 💡 Cypress öffnet eine grafische Oberfläche, in der du Testfälle manuell starten und inspizieren kannst.
 
-## Screenshot
+## 🧪 E2E-Tests mit Playwright
 
-![Screenshot](/src/assets/screenshot.png)
+### Playwright installieren
+
+```
+npx playwright install
+```
+
+### Playwright-Tests im Terminal ausführen
+
+```
+npx playwright test
+```
+
+### Playwright im UI-Modus starten
+
+```
+npx playwright test --ui
+```
+
+> 💡 Playwright bietet ein übersichtliches Test-Dashboard mit visueller Darstellung der Testschritte.
+
+## 📄 Hinweise
+
+Dieses Projekt dient als praktische Grundlage zum Erlernen und Vergleichen von **Cypress** und **Playwright** im Angular-Kontext. 
+Die Tests sind bewusst einfach gehalten, um die Testwerkzeuge und das Setup möglichst klar und verständlich zu demonstrieren.
+
+## 📸 Screenshot
+
+![Screenshot](/src/assets/screencast.gif)
