@@ -1,56 +1,58 @@
 <div class="form-wrapper grid">
   <span class="header"> Registration </span>
-  <hr>
+  <hr />
   <form class="example-form grid">
     <div class="name grid">
       <mat-form-field>
         <mat-label>First Name</mat-label>
-        <input matInput data-e2e="first-name" id="helloTest">
+        <input matInput data-e2e="first-name" id="helloTest" />
       </mat-form-field>
 
       <mat-form-field>
         <mat-label>Last Name</mat-label>
-        <input matInput data-e2e="last-name">
+        <input matInput data-e2e="last-name" />
       </mat-form-field>
     </div>
     <mat-form-field>
       <mat-label>Street Address</mat-label>
-      <input matInput data-e2e="street">
+      <input matInput data-e2e="street" />
     </mat-form-field>
 
     <div class="zip-city grid">
       <mat-form-field>
         <mat-label>Zip Code</mat-label>
-        <input matInput data-e2e="zip">
+        <input matInput data-e2e="zip" />
       </mat-form-field>
 
       <mat-form-field>
         <mat-label>City</mat-label>
-        <input matInput data-e2e="city">
+        <input matInput data-e2e="city" />
       </mat-form-field>
     </div>
 
     <mat-form-field>
       <mat-label>State</mat-label>
-      <input matInput data-e2e="state">
+      <input matInput data-e2e="state" />
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Country</mat-label>
-      <input matInput data-e2e="country">
+      <input matInput data-e2e="country" />
     </mat-form-field>
   </form>
 
-  <button mat-raised-button
-          color="primary"
-          data-e2e="send"
-          (click)="onSendButtonClick()">Send</button>
+  <button
+    mat-raised-button
+    color="primary"
+    data-e2e="send"
+    (click)="onSendButtonClick()"
+  >
+    Send
+  </button>
 </div>
 
 @if (isLoading) {
-  <div
-      class="spinner-wrapper"
-      data-e2e="loading">
+  <div class="spinner-wrapper" data-e2e="loading">
     <mat-spinner></mat-spinner>
   </div>
 }

@@ -6,7 +6,7 @@ test('Registration Test', async ({ page }) => {
   const setElementByKeyValue = async (key: string, value: string) => {
     const element = page.getByTestId(key);
     await element.focus();
-    await element.type(value);
+    await element.fill(value);
   };
 
   // set input values
@@ -23,5 +23,5 @@ test('Registration Test', async ({ page }) => {
 
   // check for success message
   const success = page.getByTestId('success');
-  await expect(success).toBeVisible({ timeout: 6000});
+  await expect(success).toBeVisible({ timeout: 6000 });
 });

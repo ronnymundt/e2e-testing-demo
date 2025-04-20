@@ -4,7 +4,7 @@ describe('Registration Test', () => {
 
     const setElementByKeyValue = (key: string, value: string) => {
       cy.get(`[data-e2e="${key}"]`).focus().type(value);
-    }
+    };
 
     // set input values
     setElementByKeyValue('first-name', 'Charles');
@@ -19,6 +19,6 @@ describe('Registration Test', () => {
     cy.get('[data-e2e="send"]').click();
 
     // check for success message
-    cy.get('[data-e2e="success"]', { timeout: 6000 } ).should('be.visible');
+    cy.get('[data-e2e="success"]', { timeout: 6000 }).should('be.visible');
   });
 });
