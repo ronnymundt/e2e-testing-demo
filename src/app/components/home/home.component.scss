@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 
-$primary-pink: mat.get-color-from-palette(mat.$pink-palette, 700);
+$pink-palette: mat.m2-define-palette(mat.$m2-pink-palette);
+$primary-pink: mat.m2-get-color-from-palette($pink-palette, 700);
 
 .form-wrapper {
   &.grid {
@@ -9,7 +10,9 @@ $primary-pink: mat.get-color-from-palette(mat.$pink-palette, 700);
     border: solid 1px $primary-pink;
     border-radius: 4px;
     width: 400px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
     padding: 3rem;
     box-sizing: border-box;
   }

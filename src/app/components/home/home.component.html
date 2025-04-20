@@ -47,8 +47,10 @@
           (click)="onSendButtonClick()">Send</button>
 </div>
 
-<div *ngIf="isLoading"
-     class="spinner-wrapper"
-     data-e2e="loading">
-  <mat-spinner></mat-spinner>
-</div>
+@if (isLoading) {
+  <div
+      class="spinner-wrapper"
+      data-e2e="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+}
