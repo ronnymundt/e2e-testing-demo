@@ -1,43 +1,43 @@
 <div class="form-wrapper grid">
   <span class="header"> Registration </span>
   <hr />
-  <form class="example-form grid">
+  <form  data-e2e="example-form" class="example-form grid" [formGroup]="form">
     <div class="name grid">
       <mat-form-field>
         <mat-label>First Name</mat-label>
-        <input matInput data-e2e="first-name" id="helloTest" />
+        <input matInput data-e2e="first-name" id="helloTest" formControlName="firstName" />
       </mat-form-field>
 
       <mat-form-field>
         <mat-label>Last Name</mat-label>
-        <input matInput data-e2e="last-name" />
+        <input matInput data-e2e="last-name" formControlName="lastName" />
       </mat-form-field>
     </div>
     <mat-form-field>
       <mat-label>Street Address</mat-label>
-      <input matInput data-e2e="street" />
+      <input matInput data-e2e="street" formControlName="street" />
     </mat-form-field>
 
     <div class="zip-city grid">
       <mat-form-field>
         <mat-label>Zip Code</mat-label>
-        <input matInput data-e2e="zip" />
+        <input matInput data-e2e="zip" formControlName="zip" />
       </mat-form-field>
 
       <mat-form-field>
         <mat-label>City</mat-label>
-        <input matInput data-e2e="city" />
+        <input matInput data-e2e="city" formControlName="city" />
       </mat-form-field>
     </div>
 
     <mat-form-field>
       <mat-label>State</mat-label>
-      <input matInput data-e2e="state" />
+      <input matInput data-e2e="state" formControlName="state" />
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Country</mat-label>
-      <input matInput data-e2e="country" />
+      <input matInput data-e2e="country" formControlName="country" />
     </mat-form-field>
   </form>
 
