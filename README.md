@@ -46,6 +46,8 @@ npx cypress open
 
 > 💡 Cypress öffnet eine grafische Oberfläche, in der du Testfälle manuell starten und inspizieren kannst.
 
+✅ Neu: Die Cypress-Tests wurden um visuelle Regressionstests mit @simonsmith/cypress-image-snapshot erweitert, um das UI-Layout per Screenshotvergleich automatisch zu prüfen.
+
 ## 🧪 E2E-Tests mit Playwright
 
 ### Playwright installieren

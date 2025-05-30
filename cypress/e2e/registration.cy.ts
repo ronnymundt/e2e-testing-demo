@@ -1,5 +1,5 @@
 describe('Registration Test', () => {
-  it('input and send', () => {
+  it('input user data & click send button', () => {
     cy.visit('http://localhost:4200/home');
 
     // set input values
@@ -18,7 +18,7 @@ describe('Registration Test', () => {
     cy.get('[data-e2e="success"]').should('be.visible');
   });
 
-  it('required validation input', () => {
+  it('click send button & check required validation works', () => {
     cy.visit('http://localhost:4200/home');
 
     // click send button
@@ -28,5 +28,10 @@ describe('Registration Test', () => {
     cy.get('[data-e2e="example-form"]')
       .should('have.class', 'ng-invalid')
       .and('have.class', 'ng-touched');
+  });
+
+  it('compare reference snapshot with page layout', () => {
+    cy.visit('http://localhost:4200/home');
+    cy.matchImageSnapshot('registration-page');
   });
 });
